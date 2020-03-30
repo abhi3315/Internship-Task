@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    text-decoration: none;
+    list-style: none;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 50px;
+    padding-left: 120px;
+}
+
+.navbar li {
+    list-style: none;
+    transition: 0.5s;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: 20px;
+    right: 170px;
+}
+
+.dropdown {
+    position: absolute;
+    right: 170px;
+    top: 60px;
+    background-color: white;
+    width: auto;
+    border: 1px solid rgb(216, 214, 214);
+    padding-right: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown ul li {
+    list-style: none;
+    padding: 5px;
+    width: auto;
+    cursor: pointer;
+}
+
+.dropdown ul li a {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+nav {
+    float: left;
+    width: 15%;
+    height: 100%;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.active {
+    color: rgb(2, 126, 175);
+    font-weight: bold;
+}
+
+i {
+    width: 25px;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgb(216, 208, 208);
+    border-radius: 5px;
+}
+
+article {
+    padding-top: 15px;
+    float: left;
+    padding-left: 10px;
+    width: 60%;
+    height: 100%;
+    margin-top: 70px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    color: rgb(119, 118, 118);
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    background-color: rgb(2, 126, 175);
+    border: 1px solid rgb(2, 126, 175);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.msg {
+    margin-top: 30px;
+    background-color: rgb(241, 236, 183);
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    text-justify: auto;
+    text-align: left;
+}
+
+.success {
+    margin: 10px 20px 20px 20px;
+    background-color: rgb(183, 228, 183);
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    text-justify: auto;
+    text-align: left;
+}
+
+.success p {
+    color: rgb(2, 82, 2);
+    margin: 18px;
+}
+
+.form {
+    border: 1px solid rgb(216, 208, 208);
+    margin: 30px 0;
+    border-radius: 5px;
+    position: relative;
+    padding-top: 60px;
+}
+
+.form input[type="text"] {
+    margin: 10px 0;
+    border: 1px solid rgb(216, 208, 208);
+    width: 94%;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(119, 118, 118);
+    padding: 10px;
+}
+
+label {
+    color: rgb(109, 109, 109);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1,
+h5 {
+    display: inline;
+}
+
+.form input[type="submit"] {
+    border: rgb(2, 126, 175);
+    background-color: rgb(2, 126, 175);
+    cursor: pointer;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info {
+    position: absolute;
+    top: 0%;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+    height: 50px;
+}
+
+.msg p {
+    color: rgb(136, 77, 0);
+    margin: 18px;
+}
+
+.comment {
+    border-left: 2px solid rgb(216, 214, 214);
+    padding-left: 10px;
+    color: rgb(70, 68, 68);
+    margin: 30px 0;
+}
+
+.info p {
+    color: rgb(88, 88, 88);
+    margin: 18px;
+}
+
+@media (max-width: 600px) {
+    nav,
+    article {
+        width: 100%;
+        height: auto;
+    }
+}
